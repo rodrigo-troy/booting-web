@@ -11,6 +11,8 @@ FROM amazoncorretto:17-alpine-jdk
 WORKDIR /app/
 
 COPY --from=BUILDER /build/target/application.jar /app/
-CMD java -jar /app/application.jar
+CMD java -jar /app/application.jar -Dspring.profiles.active=dev
+
+
 
 
