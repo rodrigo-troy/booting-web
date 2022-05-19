@@ -8,10 +8,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class BootingWebApplication {
 
     public static void main(String[] args) {
-        try (ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(BootingWebApplication.class,
-                                                                                                   args)) {
-            System.out.println("initializing...");
-        }
+        ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(BootingWebApplication.class,
+                                                                                              args);
+        System.out.printf("%s initialized",
+                          configurableApplicationContext.getApplicationName());
     }
 
 }
