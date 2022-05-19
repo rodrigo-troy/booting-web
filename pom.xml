@@ -8,14 +8,17 @@
         <version>2.7.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.rodrigotroy</groupId>
     <artifactId>booting-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>booting-web</name>
     <description>booting-web</description>
+
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -37,5 +40,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
